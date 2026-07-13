@@ -456,6 +456,16 @@ footer {
   font-size: 14px;
 }
 
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.footer-logo {
+    height: 24px; 
+    width: auto;  
+}
 .footer-content ul {
   display: flex;
   list-style: none;
@@ -480,3 +490,4 @@ footer {
   height: 22px;
   object-fit: contain;
 }
+
