@@ -458,13 +458,15 @@ footer {
 
 .footer-copyright {
     display: flex;
-    align-items: center;
-    gap: 10px; 
-}
+    line-height: 24px; 
 
 .footer-logo {
-    height: 24px; 
-    width: auto;  
+    height: 24px;
+    width: auto;
+    vertical-align: middle; 
+    margin-right: 10px;    
+} 
+
 }
 .footer-content ul {
   display: flex;
