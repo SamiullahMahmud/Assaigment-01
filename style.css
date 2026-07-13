@@ -187,3 +187,139 @@ nav ul li a {
 }
 
 
+
+/* Pricing Section */
+
+.pricing-section {
+  padding: 100px 0; 
+  background-color: #fafafa;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.pricing-header p {
+  color: #6b7280;
+  font-size: 16px;
+  margin-top: 8px; 
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  align-items: center; 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.pricing-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card.featured {
+  background: #0b1329; 
+  color: white;
+  border: none;
+  padding: 50px 35px; 
+}
+
+.plan-name {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 15px;
+  letter-spacing: 0.6px;
+}
+
+.pricing-card.featured .plan-name {
+  color: #93c5fd;
+}
+
+.plan-price {
+  font-size: 42px;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1;
+}
+
+.pricing-card.featured .plan-price {
+  font-size: 46px; 
+  color: white;
+}
+
+.plan-price span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6b7280;
+  display: block;
+  margin-top: 8px;
+}
+
+.pricing-card.featured .plan-price span {
+  color: #94a3b8;
+}
+
+
+.plan-features {
+  list-style: none;
+  margin: 30px 0;
+  border-top: 1px solid #e5e7eb;
+  padding: 30px 0 0 0;
+}
+
+.pricing-card.featured .plan-features {
+  border-top-color: #1e293b;
+}
+
+.plan-features li {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pricing-card.featured .plan-features li {
+  color: #cbd5e1;
+}
+
+.plan-features li::before {
+  content: "✓";
+  color: #3b82f6; 
+  font-weight: bold;
+}
+
+.pricing-card.featured .plan-features li::before {
+  color: #60a5fa;
+}
+
+
+.pricing-card button, 
+.pricing-card .btn {
+  width: 100%;
+  margin-top: auto; 
+}
+
+@media (max-width: 992px) {
+  .pricing-grid {
+    grid-template-columns: 1fr; 
+    gap: 30px;
+  }
+  
+  .pricing-card.featured {
+    padding: 40px 30px; 
+  }
+}
+
+
